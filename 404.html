@@ -1,0 +1,216 @@
+<!-------------------------
+******************************
+Cjhdevact Github 主页
+名称：404.html
+作者：CJH
+The file license under the MIT License
+版权所有 © CJH。
+******************************
+--------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel="icon" href="./Assets/logo.png">
+	<link rel="SHORTCUT ICON" href="./Assets/logo.png" type="image/x-icon"/>
+    <title>Cjhdevact Github 主页 - 404</title>
+	<!--<script type="module" src="https://cjhdevact.github.io/js/web-components.min.js"></script>-->
+	<script type="module" src="https://npm.elemecdn.com/@fluentui/web-components"></script>
+	<!-- 
+	https://unpkg.com
+	CDN:
+	https://npm.elemecdn.com
+	https://cdn.jsdelivr.net/npm
+	 
+	 -->
+	 <!--<script type="module" src="127.0.0.1/unpkg.com_@fluentui_web-components@2.5.16_dist_web-components.min.js"></script>-->
+	<!--<script type="text/javascript" src="unpkg.com-fluentui_web-components-2.5.16_dist_web-components.min.js"></script>-->
+    <style>
+   html
+        {
+            min-width: 580px;
+            max-width: 1600px;  
+            margin: 0 auto;  
+            height: 101%;
+        }
+
+        body 
+        {
+            background-color:rgb(249,249,249);
+            color:black;
+            font-family: '微软雅黑', serif;
+            min-width: 500px;
+            max-width: 1600px;
+            margin: 0px;
+        }
+
+        .ContentEntrance 
+        {
+            animation: FloatIn 1s cubic-bezier(0,1,0,1);
+        }
+
+        .page-title 
+        {
+            font-weight: normal;
+            font-size: 64px;
+        }
+
+        .page-secondtitle 
+        {
+            position: absolute;
+            width: 100%;
+            min-width: 580px;
+            max-width: 1920px;
+            text-align: right;
+            font-size: 16px;
+            margin: -68px 40px 0 -88px;
+        }
+
+        .grid-item 
+        {
+            position: relative;
+            margin: 4px 0 0 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 68px;
+            background-color: none;
+            border: none;
+            max-width: 1080px;
+        }
+
+        .grid-item img
+        {
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            left: 22px;
+            top: 22px;
+            bottom: 24;
+            border-radius: 8px;
+        }
+
+        .grid-item .title 
+        {
+            position: absolute;
+            font-size: 16px;
+            left: 68px;
+            right: 26px;
+            top: 25px;
+            bottom: 27px;
+            text-align: left;
+            font-family: '微软雅黑', serif;
+        }
+
+        .more 
+        {
+            font-size: 21px;
+            font-weight: normal;
+            margin: 12px 4px 4px 4px;
+            max-width: 1600px;
+        }
+
+        .more2
+        {
+            font-size: 14px;
+            font-weight: normal;
+            margin: 12px 4px 4px 4px;
+            max-width: 1600px;
+        }
+		
+        .more-item 
+        {
+            position: relative;
+            margin: 0,4px 0 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 68px;
+            background-color: transparent;
+            border: none;
+            max-width: 720px;
+        }
+
+        .more-item img
+        {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            right: 28px;
+            top: 24px;
+            bottom: 24px;
+        }
+
+        .more-item .title 
+        {
+            position: absolute;
+            font-size: 16px;
+            left: 26px;
+            right: 26px;
+            top: 25px;
+            bottom: 27px;
+            text-align: left;
+            font-family: '微软雅黑', serif;
+        }
+
+        .mbutton 
+        {
+            width: 100px;
+            /* position:absolute; */
+            top: 18px;
+            bottom: 18px;
+        }
+
+		.backbutton 
+        {
+            width: 50px;
+            top: 45px;
+            bottom: 18px;
+            right: 26px;
+        }
+
+        @media (prefers-color-scheme: dark) 
+        {
+            body 
+            {
+                background-color: rgb(40,40,40);
+                color: white;
+            }
+        }
+
+        @keyframes FloatIn
+        {
+            0% 
+            {
+                opacity: 0;
+                transform: translateY(500px);
+            }
+            40% 
+            {
+                opacity: 0;
+                transform: translateY(500px);
+            }
+            100% 
+            {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+	<center>
+    <h1 class="page-title">404</h1>
+    <div class="ContentEntrance">
+	    <h2 class="more">404 - 找不到文件或目录。</h2>
+		<h2 class="more">你要查找的资源可能已被删除、名称已更改或暂时不可用。</h2>
+		<h3 class="more2">We all have bad times.</h2>
+    </div>
+	<fluent-button class="mbutton" onclick="window.open('https://cjhdevact.github.io','_self')">
+            <span class="title">返回主页</span>
+    </fluent-button>
+    </center>
+</body>
+</html>
